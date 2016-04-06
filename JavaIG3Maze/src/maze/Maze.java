@@ -7,9 +7,12 @@ import graphImpl.AdjMatric;
 
 public class Maze extends AdjMatric {
 	private Cell[][] labyrinth;
+	private int width;
+	private int height;
 
-	public Maze(int n, boolean directed) {
-		super(n, directed);
+	public Maze(int numCell, boolean directed) {
+		super(numCell, directed);
+		labyrinth= new Cell[numCell][numCell];
 		// TODO Auto-generated constructor stub
 		
 	}
